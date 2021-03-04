@@ -3,6 +3,10 @@ import { Route, Switch } from 'react-router';
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
+import Blog from './pages/Blog';
+import Programs from './pages/Programs';
+import ContactUs from './pages/ContactUs';
+import TakeAction from './pages/TakeAction';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -28,7 +32,11 @@ function App() {
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/blog' component={Blog} />
         <Route path='/about' component={About} />
+        <Route path='/programs' component={Programs} />
+        <Route path='/contact' component={ContactUs} />
+        <Route path='/take-action' component={TakeAction} />
       </Switch>
     </div>
   );
