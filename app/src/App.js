@@ -31,7 +31,7 @@ function App() {
       asd
       </div> */}
       <Navbar />
-      <Footer />
+      {/* <Footer /> */}
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/blog' component={Blog} />
