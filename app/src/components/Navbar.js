@@ -7,21 +7,13 @@ const Navbar = () => {
       className='flex justify-between items-center h-16 absolute inset-0 text-white px-24 py-16'
       role='navigation'
     >
-      <Link to='/' className='text-3xl font-black'>
+      <Link to='/' className='text-3xl font-black w-1/2 text-left'>
         ECCS
       </Link>
-      <Link to='/blog' className='p-4'>
-        Blog
-      </Link>
-      <Link to='/about' className='p-4'>
-        About
-      </Link>
-      <Link to='/programs' className='p-4'>
-        Programs
-      </Link>
-      <Link to='/contact' className='p-4'>
-        Contact Us
-      </Link>
+      <Link to='/blog'>Blog</Link>
+      <Link to='/about'>About</Link>
+      <Link to='/programs'>Programs</Link>
+      <Link to='/contact'>Contact Us</Link>
       <a href='https://www.instagram.com/engagedcommunities/'>
         <svg
           className='w-5 h-5'

@@ -8,6 +8,7 @@ import Programs from './pages/Programs';
 import ContactUs from './pages/ContactUs';
 import TakeAction from './pages/TakeAction';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       asd
       </div> */}
       <Navbar />
+      <Footer />
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/blog' component={Blog} />
