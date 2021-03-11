@@ -31,7 +31,6 @@ function App() {
       asd
       </div> */}
       <Navbar />
-      {/* <Footer /> */}
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/blog' component={Blog} />
@@ -40,6 +39,7 @@ function App() {
         <Route path='/contact' component={ContactUs} />
         <Route path='/take-action' component={TakeAction} />
       </Switch>
+      <Footer />
     </div>
   );
 }

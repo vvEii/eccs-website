@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='flex bg-black space-between w-screen h-2/6 p-10'>
+    <div className='flex bg-black space-between w-screen h-2/6 relative z-10 p-10'>
       <div className='flex flex-col flex-1 text-white text-left ml-24'>
         <span className='font-black text-xl pb-10'>
           Engaged Communities Canada Society
