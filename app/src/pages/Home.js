@@ -23,7 +23,17 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className='w-screen'>adasd</div>
+      <div className='flex justify-between items-center w-screen bg-test px-24 py-12'>
+        <span className='font-bold text-black text-4xl text-left leading-normal pr-12'>
+          Engaged Communities Canada Society Engaged Communities Canada Society
+          Engaged Communities Canada Society
+        </span>
+        <span className='text-black text-xl text-left leading-loose pl-12'>
+          Our mission is to create international consensus around the climate
+          emergency, as well a shared plan for saving the planet’s most
+          exceptional wild places.
+        </span>
+      </div>
     </>
   );
 };
