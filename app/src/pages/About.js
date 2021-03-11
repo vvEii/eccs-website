@@ -2,9 +2,14 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div>
-      <div className='bg-yellow-300 text-5xl h-screen p-60'>About</div>
-    </div>
+    <>
+      <div
+        className='bg-no-repeat bg-center bg-cover bg-cover w-screen relative py-72'
+        style={{ backgroundImage: 'url(images/bg-about.jpg)' }}
+      ></div>
+
+      <span className='text-5xl'>content</span>
+    </>
   );
 };
 
