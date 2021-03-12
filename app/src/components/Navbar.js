@@ -10,14 +10,15 @@ const Navbar = () => {
       <Link to='/' className='text-3xl font-normal w-1/2 text-left'>
         ECCS
       </Link>
-      <Link className='font-light' to='/blog'>
-        Blog
-      </Link>
+
       <Link className='font-light' to='/about'>
         About
       </Link>
       <Link className='font-light' to='/programs'>
         Programs
+      </Link>
+      <Link className='font-light' to='/blog'>
+        Blog
       </Link>
       <Link className='font-light' to='/contact'>
         Contact Us
@@ -66,7 +67,7 @@ const Navbar = () => {
         to='/take-action'
         className='bg-white text-sm text-black px-7 py-4 font-medium hover:bg-gray-200 transition ease-in-out duration-700'
       >
-        Take Action
+        Get Involved
       </Link>
     </nav>
   );

@@ -15,14 +15,14 @@ const Footer = () => {
       <div className='flex justify-around'>
         <div className='flex flex-col text-white text-left mr-24'>
           <span className='font-medium text-xl pb-10'>Our Work </span>
-          <Link className='underline' to='/blog'>
-            Blog
-          </Link>
           <Link className='underline' to='/about'>
             About
           </Link>
           <Link className='underline' to='/programs'>
             Programs
+          </Link>
+          <Link className='underline' to='/blog'>
+            Blog
           </Link>
           <Link className='underline' to='/contact'>
             Contact Us
@@ -30,8 +30,11 @@ const Footer = () => {
         </div>
         <div className='flex flex-col text-white text-left'>
           <span className='font-medium text-xl pb-10'>Follow</span>
-          <a className='underline' href='https://twitter.com/EngagedCommuni2'>
-            Twitter
+          <a
+            className='underline'
+            href='https://www.instagram.com/engagedcommunities/'
+          >
+            Instagram
           </a>
           <a
             className='underline'
@@ -39,11 +42,8 @@ const Footer = () => {
           >
             Facebook
           </a>
-          <a
-            className='underline'
-            href='https://www.instagram.com/engagedcommunities/'
-          >
-            Instagram
+          <a className='underline' href='https://twitter.com/EngagedCommuni2'>
+            Twitter
           </a>
         </div>
       </div>
