@@ -64,7 +64,7 @@ const Navbar = () => {
       </a>
       <Link
         to='/take-action'
-        className='bg-white text-sm text-black px-7 py-4 font-medium hover:bg-gray-100'
+        className='bg-white text-sm text-black px-7 py-4 font-medium hover:bg-gray-200 transition ease-in-out duration-700'
       >
         Take Action
       </Link>

@@ -16,7 +16,7 @@ const Home = () => {
           </p>
           <Link
             to='/about'
-            className='bg-white text-black px-6 py-4 font-medium w-40 ml-24 hover:bg-gray-100'
+            className='bg-white text-black px-6 py-4 font-medium w-40 ml-24 hover:bg-gray-200 transition ease-in-out duration-700'
           >
             Learn More
           </Link>
@@ -32,6 +32,29 @@ const Home = () => {
           emergency, as well a shared plan for saving the planet’s most
           exceptional wild places.
         </p>
+      </div>
+      <div className='flex justify-between mx-24 py-20'>
+        <div className='flex flex-col flex-1 pr-24'>
+          <p className='text-black text-left text-4xl font-normal leading-normal pt-24'>
+            Chanaasdsdging the world is possible. We’asdasdasdve done it before.
+          </p>
+          <p className='text-black text-left font-light py-12'>
+            Our leadership team bring years of experience to bear on the
+            greatest challenge of our time. We’re results driven, with a proven
+            record of previous successes.
+          </p>
+          <Link
+            to='/about'
+            className='bg-black text-sm text-white px-7 py-4 font-medium hover:bg-gray-300 w-2/6 transition ease-in-out duration-700'
+          >
+            Learn More
+          </Link>
+        </div>
+        <img
+          src='images/content-landing-page.jpg'
+          alt=''
+          className='w-1 flex-1 py-10 pl-10'
+        />
       </div>
     </>
   );
