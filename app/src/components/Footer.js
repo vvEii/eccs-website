@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='flex bg-black justify-between w-screen h-2/6 relative py-10 px-24'>
       <div className='flex flex-col text-white text-left'>
-        <span className='font-black text-2xl pb-10'>
+        <span className='font-medium text-xl pb-10'>
           Engaged Communities Canada Society
         </span>
         <span>12345 street road</span>
@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <div className='flex justify-around'>
         <div className='flex flex-col text-white text-left mr-24'>
-          <span className='font-black text-2xl pb-10'>Our Work </span>
+          <span className='font-medium text-xl pb-10'>Our Work </span>
           <Link className='underline' to='/blog'>
             Blog
           </Link>
@@ -29,7 +29,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className='flex flex-col text-white text-left'>
-          <span className='font-black text-2xl pb-10'>Follow</span>
+          <span className='font-medium text-xl pb-10'>Follow</span>
           <a className='underline' href='https://twitter.com/EngagedCommuni2'>
             Twitter
           </a>

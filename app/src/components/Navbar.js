@@ -7,7 +7,7 @@ const Navbar = () => {
       className='flex justify-between items-center h-16 absolute inset-0 z-10 text-white px-24 py-16'
       role='navigation'
     >
-      <Link to='/' className='text-3xl font-black w-1/2 text-left'>
+      <Link to='/' className='text-3xl font-normal w-1/2 text-left'>
         ECCS
       </Link>
       <Link to='/blog'>Blog</Link>
@@ -56,7 +56,7 @@ const Navbar = () => {
       </a>
       <Link
         to='/take-action'
-        className='bg-white text-black px-6 py-4 font-black hover:bg-gray-100'
+        className='bg-white text-black px-6 py-4 font-medium hover:bg-gray-100'
       >
         Take Action
       </Link>
