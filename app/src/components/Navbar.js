@@ -10,10 +10,18 @@ const Navbar = () => {
       <Link to='/' className='text-3xl font-normal w-1/2 text-left'>
         ECCS
       </Link>
-      <Link to='/blog'>Blog</Link>
-      <Link to='/about'>About</Link>
-      <Link to='/programs'>Programs</Link>
-      <Link to='/contact'>Contact Us</Link>
+      <Link className='font-light' to='/blog'>
+        Blog
+      </Link>
+      <Link className='font-light' to='/about'>
+        About
+      </Link>
+      <Link className='font-light' to='/programs'>
+        Programs
+      </Link>
+      <Link className='font-light' to='/contact'>
+        Contact Us
+      </Link>
       <a href='https://www.instagram.com/engagedcommunities/'>
         <svg
           className='w-5 h-5'
@@ -56,7 +64,7 @@ const Navbar = () => {
       </a>
       <Link
         to='/take-action'
-        className='bg-white text-black px-6 py-4 font-medium hover:bg-gray-100'
+        className='bg-white text-sm text-black px-7 py-4 font-medium hover:bg-gray-100'
       >
         Take Action
       </Link>
