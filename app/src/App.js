@@ -6,7 +6,7 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Programs from './pages/Programs';
 import ContactUs from './pages/ContactUs';
-import TakeAction from './pages/TakeAction';
+import GetInvolved from './pages/GetInvolved';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -37,7 +37,7 @@ function App() {
         <Route path='/about' component={About} />
         <Route path='/programs' component={Programs} />
         <Route path='/contact' component={ContactUs} />
-        <Route path='/take-action' component={TakeAction} />
+        <Route path='/get-involved' component={GetInvolved} />
       </Switch>
       <Footer />
     </div>

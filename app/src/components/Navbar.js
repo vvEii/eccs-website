@@ -64,7 +64,7 @@ const Navbar = () => {
         </svg>
       </a>
       <Link
-        to='/take-action'
+        to='/get-involved'
         className='bg-white text-sm text-black px-7 py-4 font-medium hover:bg-gray-200 transition ease-in-out duration-700'
       >
         Get Involved

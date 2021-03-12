@@ -1,13 +1,13 @@
 import React from 'react';
 
-const TakeAction = () => {
+const GetInvolved = () => {
   return (
     <div>
       <div className='overflow-hidden max-h-screen'>
         <img
           src='/images/bg-landing-page.jpg'
           alt=''
-          className='object-cover relative'
+          className='object-cover relative min-h-screen'
         />
         <div
           className='absolute inset-0 opacity-50'
@@ -46,4 +46,4 @@ const TakeAction = () => {
   );
 };
 
-export default TakeAction;
+export default GetInvolved;
