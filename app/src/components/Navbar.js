@@ -1,7 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const location = useLocation().pathname;
+  console.log('ss');
+  console.log(location);
   return (
     <nav
       className='flex justify-between items-center h-16 absolute inset-0 z-20 text-white px-24 py-16'
