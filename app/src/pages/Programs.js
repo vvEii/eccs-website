@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PostCard from '../components/PostCard';
-import programs from '../data/programs';
+import PROGRAMS from '../data/programs';
 
 const Programs = () => {
   return (
@@ -10,7 +10,7 @@ const Programs = () => {
         Current Programs
       </div>
       <div className='grid grid-cols-2 gap-10'>
-        {programs.map((program) => (
+        {PROGRAMS.map((program) => (
           <PostCard
             img={program.img}
             date={program.date}
