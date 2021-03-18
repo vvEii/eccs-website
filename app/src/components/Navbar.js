@@ -2,12 +2,21 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-  const location = useLocation().pathname;
-  console.log('ss');
-  console.log(location);
+  // TIPs about react hook:
+  // 1. react hooks must be called in the component body
+  // 2. react hooks can't be called conditionally
+
+  const currentPath = useLocation().pathname;
+
   return (
     <nav
-      className='flex justify-between items-center h-16 absolute inset-0 z-20 text-white px-24 py-16'
+      className={
+        currentPath === '/' ||
+        currentPath === '/about' ||
+        currentPath === '/get-involved'
+          ? 'white-nav'
+          : 'black-nav'
+      }
       role='navigation'
     >
       <Link to='/' className='text-3xl font-normal w-1/2 text-left'>
