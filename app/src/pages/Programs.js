@@ -5,17 +5,23 @@ import programs from '../data/programs';
 
 const Programs = () => {
   return (
-    <div>
-      <div className='div text-5xl text-black font-medium block mt-40'>
+    <div className='mx-24'>
+      <div className='div text-5xl text-black font-medium block mt-40 mb-24'>
         Current Programs
       </div>
-      <PostCard
-        title={'test title'}
-        date={'12/12/1212'}
-        abstract={'asd asd asd asd asd asd asd'}
-      />
+      <div className='grid grid-cols-2 gap-10'>
+        {programs.map((program) => (
+          <PostCard
+            img={program.img}
+            date={program.date}
+            title={program.title}
+            abstract={program.abstract}
+          />
+        ))}
+      </div>
+
       <Link
-        className='underline text-5xl text-black font-medium block mb-40'
+        className='underline text-5xl text-black font-medium block mb-40 mt-24'
         to='/get-involved'
       >
         Get Involved

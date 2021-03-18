@@ -16,18 +16,18 @@ const Home = () => {
           </p>
           <Link
             to='/about'
-            className='bg-white text-black px-6 py-4 font-medium w-40 ml-24 hover:bg-gray-200 transition ease-in-out duration-700'
+            className='bg-white text-black text-base px-6 py-4 font-medium w-40 ml-24 hover:bg-gray-200 transition ease-in-out duration-700'
           >
             Learn More
           </Link>
         </div>
       </div>
       <div className='flex  items-center w-screen bg-test px-24 py-12'>
-        <p className='font-medium text-black text-3xl text-left leading-normal pr-20'>
+        <p className='font-medium text-black text-4xl text-left leading-normal pr-20'>
           Engaged Communities Canada Society Engaged Communities Canada Society
           Engaged Communities Canada Society
         </p>
-        <p className='text-black text-xl font-light text-left leading-loose pl-20'>
+        <p className='text-black text-2xl font-light text-left leading-loose pl-20'>
           Our mission is to create international consensus around the climate
           emergency, as well a shared plan for saving the planet’s most
           exceptional wild places.
@@ -38,14 +38,14 @@ const Home = () => {
           <p className='text-black text-left text-4xl font-normal leading-normal pt-24'>
             Chanaasdsdging the world is possible. We’asdasdasdve done it before.
           </p>
-          <p className='text-black text-left font-light py-12'>
+          <p className='text-black text-lg text-left font-light py-12'>
             Our leadership team bring years of experience to bear on the
             greatest challenge of our time. We’re results driven, with a proven
             record of previous successes.
           </p>
           <Link
             to='/about'
-            className='bg-black text-sm text-white px-7 py-4 font-medium hover:bg-gray-300 w-2/6 transition ease-in-out duration-700'
+            className='bg-black text-base text-white px-7 py-4 font-medium hover:bg-gray-300 w-2/6 transition ease-in-out duration-700'
           >
             Learn More
           </Link>

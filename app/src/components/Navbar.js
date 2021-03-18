@@ -19,7 +19,7 @@ const Navbar = () => {
       }
       role='navigation'
     >
-      <Link to='/' className='text-3xl font-normal w-1/2 text-left'>
+      <Link to='/' className='text-4xl font-normal w-1/2 text-left'>
         ECCS
       </Link>
 

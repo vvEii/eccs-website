@@ -8,41 +8,44 @@ const Footer = () => {
         <span className='font-medium text-xl pb-10'>
           Engaged Communities Canada Society
         </span>
-        <span>12345 street road</span>
-        <span>Vancouver, BC, VVV 123</span>
-        <span>Made with OMW</span>
+        <span className='text-base pb-1'>12345 street road</span>
+        <span className='text-base pb-1'>Vancouver, BC, VVV 123</span>
+        <span className='text-base pb-1'>Made with OMW</span>
       </div>
       <div className='flex justify-around'>
         <div className='flex flex-col text-white text-left mr-24'>
           <span className='font-medium text-xl pb-10'>Our Work </span>
-          <Link className='underline' to='/about'>
+          <Link className='underline text-base pb-1' to='/about'>
             About
           </Link>
-          <Link className='underline' to='/programs'>
+          <Link className='underline text-base pb-1' to='/programs'>
             Programs
           </Link>
-          <Link className='underline' to='/blog'>
+          <Link className='underline text-base pb-1' to='/blog'>
             Blog
           </Link>
-          <Link className='underline' to='/contact'>
+          <Link className='underline text-base pb-1' to='/contact'>
             Contact Us
           </Link>
         </div>
         <div className='flex flex-col text-white text-left'>
           <span className='font-medium text-xl pb-10'>Follow</span>
           <a
-            className='underline'
+            className='underline text-base pb-1'
             href='https://www.instagram.com/engagedcommunities/'
           >
             Instagram
           </a>
           <a
-            className='underline'
+            className='underline text-base pb-1'
             href='https://www.facebook.com/Engaged-Communities-114376120212298/'
           >
             Facebook
           </a>
-          <a className='underline' href='https://twitter.com/EngagedCommuni2'>
+          <a
+            className='underline text-base pb-1'
+            href='https://twitter.com/EngagedCommuni2'
+          >
             Twitter
           </a>
         </div>
