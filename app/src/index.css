@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.white-nav {
+.nav-white {
   @apply flex justify-between items-center h-16 absolute inset-0 z-20 text-white px-24 py-16;
 }
 
-.black-nav {
+.nav-black {
   @apply flex justify-between items-center h-16 absolute inset-0 z-20 text-black px-24 py-16;
+}
+
+.get-involved-btn-white {
+  @apply bg-white text-sm text-black px-7 py-4 font-medium hover:bg-gray-200 transition ease-in-out duration-700;
+}
+
+.get-involved-btn-black {
+  @apply bg-black text-sm text-white px-7 py-4 font-medium hover:bg-gray-200 transition ease-in-out duration-700;
 }

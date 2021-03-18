@@ -14,8 +14,8 @@ const Navbar = () => {
         currentPath === '/' ||
         currentPath === '/about' ||
         currentPath === '/get-involved'
-          ? 'white-nav'
-          : 'black-nav'
+          ? 'nav-white'
+          : 'nav-black'
       }
       role='navigation'
     >
@@ -77,7 +77,13 @@ const Navbar = () => {
       </a>
       <Link
         to='/get-involved'
-        className='bg-white text-sm text-black px-7 py-4 font-medium hover:bg-gray-200 transition ease-in-out duration-700'
+        className={
+          currentPath === '/' ||
+          currentPath === '/about' ||
+          currentPath === '/get-involved'
+            ? 'get-involved-btn-white'
+            : 'get-involved-btn-black'
+        }
       >
         Get Involved
       </Link>
