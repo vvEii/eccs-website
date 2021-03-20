@@ -21,7 +21,7 @@ const Programs = () => {
       </div>
 
       <Link
-        className='underline text-5xl text-black font-medium block mb-40 mt-24'
+        className='hover:underline text-5xl text-black font-medium block mb-40 mt-24'
         to='/get-involved'
       >
         Get Involved

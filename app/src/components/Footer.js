@@ -10,7 +10,10 @@ const Footer = () => {
         </span>
         <span className='text-base pb-1'>12345 street road</span>
         <span className='text-base pb-1'>Vancouver, BC, VVV 123</span>
-        <span className='text-base pb-1'>Made with OMW</span>
+        <span className='text-base pb-1'>Anouncement</span>
+        <span className='text-base pb-1'>
+          Powered by Oxus Machine Works Ltd.
+        </span>
       </div>
       <div className='flex justify-around'>
         <div className='flex flex-col text-white text-left mr-24'>
