@@ -16,6 +16,7 @@ const Programs = () => {
             date={program.date}
             title={program.title}
             abstract={program.abstract}
+            content={program.content}
           />
         ))}
       </div>

@@ -9,6 +9,7 @@ import ContactUs from './pages/ContactUs';
 import GetInvolved from './pages/GetInvolved';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ProgramDetails from './pages/ProgramDetails';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/programs' component={Programs} />
         <Route path='/contact' component={ContactUs} />
         <Route path='/get-involved' component={GetInvolved} />
+        <Route path='/program-details' component={ProgramDetails} />
       </Switch>
       <Footer />
     </div>
