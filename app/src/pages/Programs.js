@@ -17,6 +17,7 @@ const Programs = () => {
             abstract={program.abstract}
             content={program.content}
             key={program.id}
+            id={program.id}
           />
         ))}
       </div>

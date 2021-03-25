@@ -1,4 +1,5 @@
 import React from 'react';
+import NavTab from '../components/NavTab';
 
 const ProgramDetails = (props) => {
   const program = props.location.programProps;
@@ -10,6 +11,7 @@ const ProgramDetails = (props) => {
       <p className='text-base text-black block whitespace-pre-wrap text-left font-light'>
         {program.content}
       </p>
+      <NavTab title='test' />
     </div>
   );
 };
