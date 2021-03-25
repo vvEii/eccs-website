@@ -13,10 +13,10 @@ const Programs = () => {
         {PROGRAMS.map((program) => (
           <PostCard
             img={program.img}
-            date={program.date}
             title={program.title}
             abstract={program.abstract}
             content={program.content}
+            key={program.id}
           />
         ))}
       </div>

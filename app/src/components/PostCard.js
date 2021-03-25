@@ -13,7 +13,6 @@ const PostCard = (props) => {
           pathname: '/program-details',
           programProps: {
             content: props.content,
-            date: props.date,
             title: props.title,
           },
         }}
