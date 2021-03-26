@@ -68,7 +68,7 @@ const Form = () => {
       </div>
 
       <button
-        className='bg-black text-white text-xl font-medium mt-14 h-full'
+        className='bg-black text-white text-xl font-medium mt-14 h-full focus:outline-none active:bg-gray-400'
         onClick={handleSubmit}
       >
         Submit
