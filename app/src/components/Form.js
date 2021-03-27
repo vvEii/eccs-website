@@ -9,7 +9,13 @@ const Form = () => {
   const [nameAlert, setNameAlert] = useState(false);
   const [emailAlert, setEmailAlert] = useState(false);
   const [emailFormatAlert, setEmailFormatAlert] = useState(false);
-  const [messageAlert, setMessageAlert] = useState('');
+  const [messageAlert, setMessageAlert] = useState(false);
+  const [successAlert, setSuccessAlert] = useState(false);
+
+  const validateEmail = (email) => {
+    const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    return re.test(email.toLowerCase());
+  };
 
   const handleSubmit = () => {
     if (!firstname || !lastname) {
@@ -20,9 +26,8 @@ const Form = () => {
       setEmailAlert(true);
       return;
     }
-    const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-    if (!re.test(email.toLowerCase())) {
+    if (!validateEmail(email)) {
       setEmailFormatAlert(true);
       return;
     }
@@ -47,6 +52,7 @@ const Form = () => {
       .then((res) => {
         if (res.status === 200) {
           //changinf the text of button
+          setSuccessAlert(true);
         }
       })
       .catch((err) => console.log(err));
@@ -70,7 +76,10 @@ const Form = () => {
             type='text'
             className='pl-2 text-base text-black bg-gray-100 block w-full h-full mb-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-4'
             value={firstname}
-            onChange={(e) => setFirstname(e.target.value)}
+            onChange={(e) => {
+              e.target.value ? setNameAlert(false) : setNameAlert(true);
+              setFirstname(e.target.value);
+            }}
           />
           <label className='text-sm text-black font-light'>First Name</label>
         </div>
@@ -79,7 +88,10 @@ const Form = () => {
             type='text'
             className='pl-2 text-base text-black  bg-gray-100 block w-full h-full mb-2 border border-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-4'
             value={lastname}
-            onChange={(e) => setLastname(e.target.value)}
+            onChange={(e) => {
+              e.target.value ? setNameAlert(false) : setNameAlert(true);
+              setLastname(e.target.value);
+            }}
           />
           <label className='text-sm text-black font-light'>Last Name</label>
         </div>
@@ -104,7 +116,14 @@ const Form = () => {
           type='text'
           className='pl-2 text-base text-black  bg-gray-100 block w-full h-full border border-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-4'
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => {
+            e.target.value ? setEmailAlert(false) : setEmailAlert(true);
+
+            validateEmail(e.target.value)
+              ? setEmailFormatAlert(false)
+              : setEmailFormatAlert(true);
+            setEmail(e.target.value);
+          }}
         />
       </div>
       <div className='text-left mt-14'>
@@ -131,7 +150,7 @@ const Form = () => {
         className='bg-black text-white text-xl font-medium mt-14 h-full focus:outline-none active:bg-gray-400'
         onClick={handleSubmit}
       >
-        Submit
+        {successAlert ? 'You have successfully submited message!' : 'Submit'}
       </button>
     </form>
   );
