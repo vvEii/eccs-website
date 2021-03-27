@@ -8,6 +8,7 @@ const Form = () => {
   const [message, setMessage] = useState('');
   const [nameAlert, setNameAlert] = useState(false);
   const [emailAlert, setEmailAlert] = useState(false);
+  const [emailFormatAlert, setEmailFormatAlert] = useState(false);
   const [messageAlert, setMessageAlert] = useState('');
 
   const handleSubmit = () => {
@@ -19,10 +20,17 @@ const Form = () => {
       setEmailAlert(true);
       return;
     }
+    const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+    if (!re.test(email.toLowerCase())) {
+      setEmailFormatAlert(true);
+      return;
+    }
     if (!message) {
       setMessageAlert(true);
       return;
     }
+
     const params = {
       firstname,
       lastname,
@@ -36,7 +44,11 @@ const Form = () => {
         params,
         'user_4C6MbHkzQddnZAqzXJwcr'
       )
-      .then((res) => console.log('SUCCESS' + res.status, res.text))
+      .then((res) => {
+        if (res.status === 200) {
+          //changinf the text of button
+        }
+      })
       .catch((err) => console.log(err));
   };
   return (
@@ -81,6 +93,13 @@ const Form = () => {
         ) : (
           <></>
         )}
+        {emailFormatAlert ? (
+          <span className='text-base font-light text-red-400 ml-4'>
+            Please use correct email format.
+          </span>
+        ) : (
+          <></>
+        )}
         <input
           type='text'
           className='pl-2 text-base text-black  bg-gray-100 block w-full h-full border border-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-4'
@@ -101,7 +120,10 @@ const Form = () => {
           type='text'
           className='pl-2 pt-2 text-base text-black resize-y bg-gray-100 block w-full h-full border border-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-4'
           value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          onChange={(e) => {
+            e.target.value ? setMessageAlert(false) : setMessageAlert(true);
+            setMessage(e.target.value);
+          }}
         />
       </div>
 
