@@ -10,7 +10,7 @@ const Programs = () => {
         Current Programs
       </div>
       <div className='grid grid-cols-2 gap-10'>
-        {PROGRAMS.map((program) => (
+        {PROGRAMS.map((program, index) => (
           <PostCard
             img={program.img}
             title={program.title}
@@ -18,6 +18,7 @@ const Programs = () => {
             content={program.content}
             key={program.id}
             id={program.id}
+            index={index}
           />
         ))}
       </div>

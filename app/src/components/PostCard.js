@@ -13,6 +13,7 @@ const PostCard = (props) => {
           programProps: {
             content: props.content,
             title: props.title,
+            index: props.index,
           },
         }}
         className='underline text-black text-base pt-8'
