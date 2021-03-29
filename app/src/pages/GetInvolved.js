@@ -30,7 +30,9 @@ const GetInvolved = () => {
         </div>
         <div className='flex-1'></div>
         <div className='flex-1'>
-          <p className='text-4xl font-medium py-10'>Volunteer</p>
+          <p className='text-4xl font-medium py-10'>
+            Volunteer & Employment Opportunities
+          </p>
           <p className='font-extralight text-lg'>
             It all begins with an idea. Maybe you want to launch a business.
             Maybe you want to turn a hobby into something more. Or maybe you
