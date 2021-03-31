@@ -1,32 +1,15 @@
-# Intro
+# Engaged Communities Canada Society Website
 
-This project is made for Engaged Communities Canada Society official website using React and Tailwind CSS.
+This project is made for Engaged Communities Canada Society official website using React and Tailwind CSS. Cooperation with [Oxus Machine Works](https://www.linkedin.com/company/oxus-machine-works/)
 
-Check [ECCS's Facebook](https://www.facebook.com/Engaged-Communities-114376120212298/) if you want to learn them more.
+ECCS aims to address the systemic gaps that exist for underserved communities across British Columbia's lower mainland region in accessing equitable solutions to complex health challenges. The primary activities include the delivery of food, hygiene supplies, personal hygiene services, personal protective equipment, overdose prevention education and resources, and youth programming (academic assistance, mentorship, athletics, and outdoor adventures) to communities in greatest need.
 
-## Available Scripts
+## Social media links:
 
-In the project directory, you can run:
+- [ECCS Facebook](https://www.facebook.com/Engaged-Communities-114376120212298/)
+- [ECCS Instagram] (https://www.instagram.com/engagedcommunities/)
+- [ECCS Twitter](https://twitter.com/EngagedCommuni2)
 
-### `npm start`
+## Contributor:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Cooper Shang](https://github.com/vvEii)
