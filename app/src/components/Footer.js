@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <span className='text-base bg-black w-screen text-white font-light block'>
+      <span className='text-base bg-black w-screen text-white font-light block pb-12'>
         Powered by Oxus Machine Works Ltd.
       </span>
     </>

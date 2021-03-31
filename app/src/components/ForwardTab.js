@@ -3,7 +3,9 @@ import React from 'react';
 const ForwardTab = (props) => {
   return (
     <div className='flex justify-items-center items-center'>
-      <span className='text-4xl text-black mr-4'>{props.title}</span>
+      <span className='text-2xl text-black mr-4 md:text-4xl'>
+        {props.title}
+      </span>
       <svg
         version='1.1'
         id='Capa_1'

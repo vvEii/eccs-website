@@ -25,7 +25,7 @@ function App() {
         <Route path='/programs' component={Programs} />
         <Route path='/contact' component={ContactUs} />
         <Route path='/get-involved' exact component={GetInvolved} />
-        <Route path='/program-details' exact component={ProgramDetails} />
+        <Route path='/program-details' component={ProgramDetails} />
         <Route path='/get-involved/donate' exact component={Donate} />
         <Route path='/get-involved/partnership' exact component={Partnership} />
         <Route
