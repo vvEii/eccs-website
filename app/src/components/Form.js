@@ -17,6 +17,17 @@ const Form = () => {
   const [successAlert, setSuccessAlert] = useState(false);
   const [spinAlert, setSpinAlert] = useState(false);
 
+  const resetForm = () => {
+    setFirstname('');
+    setLastname('');
+    setEmail('');
+    setMessage('');
+    setNameAlert(false);
+    setEmailAlert(false);
+    setEmailFormatAlert(false);
+    setMessageAlert(false);
+  };
+
   const validateEmail = (email) => {
     const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     return re.test(email.toLowerCase());
@@ -52,9 +63,12 @@ const Form = () => {
       .send(SERVICE_ID, TEMPLATE_ID, params, USER_ID)
       .then((res) => {
         if (res.status === 200) {
-          //changinf the text of button
           setSuccessAlert(true);
           setSpinAlert(false);
+          resetForm();
+          setTimeout(() => {
+            setSuccessAlert(false);
+          }, 1500);
         }
       })
       .catch((err) => console.log(err));
@@ -149,7 +163,7 @@ const Form = () => {
       </div>
 
       <button
-        className='bg-black text-white text-xl font-medium mt-14 h-full focus:outline-none active:bg-gray-400 flex justify-center items-center'
+        className='bg-black text-white text-2xl font-medium mt-14 h-full focus:outline-none active:bg-gray-400 flex justify-center items-center'
         onClick={handleSubmit}
       >
         {spinAlert && (
