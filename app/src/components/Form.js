@@ -15,6 +15,7 @@ const Form = () => {
   const [emailFormatAlert, setEmailFormatAlert] = useState(false);
   const [messageAlert, setMessageAlert] = useState(false);
   const [successAlert, setSuccessAlert] = useState(false);
+  const [spinAlert, setSpinAlert] = useState(false);
 
   const validateEmail = (email) => {
     const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -46,12 +47,14 @@ const Form = () => {
       email,
       message,
     };
+    setSpinAlert(true);
     emailjs
       .send(SERVICE_ID, TEMPLATE_ID, params, USER_ID)
       .then((res) => {
         if (res.status === 200) {
           //changinf the text of button
           setSuccessAlert(true);
+          setSpinAlert(false);
         }
       })
       .catch((err) => console.log(err));
@@ -146,10 +149,18 @@ const Form = () => {
       </div>
 
       <button
-        className='bg-black text-white text-xl font-medium mt-14 h-full focus:outline-none active:bg-gray-400'
+        className='bg-black text-white text-xl font-medium mt-14 h-full focus:outline-none active:bg-gray-400 flex justify-center items-center'
         onClick={handleSubmit}
       >
-        {successAlert ? 'You have successfully submited message!' : 'Submit'}
+        {spinAlert && (
+          <img
+            className='text-white animate-spin w-15 '
+            src='images/status.png'
+            alt='Loading'
+          />
+        )}
+        {successAlert && 'You have successfully submited message!'}
+        {!spinAlert && !successAlert && 'Submit'}
       </button>
     </form>
   );
