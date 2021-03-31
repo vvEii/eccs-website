@@ -3,7 +3,7 @@ import Form from '../components/Form';
 
 const ContactUs = () => {
   return (
-    <div className='mx-24 mt-40 mb-28 grid md:grid-cols-2 gap-4 justify-items-start sm:grid-cols-1 '>
+    <div className='px-24 mt-40 mb-28 grid md:grid-cols-2 gap-4 justify-items-start sm:grid-cols-1 lg:px-60 2xl:px-96'>
       <div className='flex flex-col items-start'>
         <p className='text-5xl font-medium text-black pb-8'>Contact Us</p>
         <p className='text-base font-light text-black text-left pr-20 pb-8 leading-7'>

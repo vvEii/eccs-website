@@ -6,6 +6,7 @@ const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 const USER_ID = process.env.REACT_APP_EMAILJS_USER_ID;
 
 const Form = () => {
+  // refactor the code reference: https://stackoverflow.com/questions/54895883/reset-to-initial-state-with-react-hooks
   const [firstname, setFirstname] = useState('');
   const [lastname, setLastname] = useState('');
   const [email, setEmail] = useState('');
@@ -74,7 +75,7 @@ const Form = () => {
       .catch((err) => console.log(err));
   };
   return (
-    <form className='grid w-full' onSubmit={(e) => e.preventDefault()}>
+    <form className='grid w-full ' onSubmit={(e) => e.preventDefault()}>
       <p className='text-base text-black font-light text-left inline'>
         Name *
         {nameAlert ? (
@@ -163,7 +164,7 @@ const Form = () => {
       </div>
 
       <button
-        className='bg-black text-white text-2xl font-medium mt-14 h-full focus:outline-none active:bg-gray-400 flex justify-center items-center'
+        className='bg-black text-white text-2xl font-medium mt-14 h-full focus:outline-none active:bg-gray-400 flex justify-center items-center hover:bg-gray-400 transition ease-in-out duration-700'
         onClick={handleSubmit}
       >
         {spinAlert && (
