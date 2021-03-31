@@ -7,7 +7,7 @@ ECCS aims to address the systemic gaps that exist for underserved communities ac
 ## Social media links:
 
 - [ECCS Facebook](https://www.facebook.com/Engaged-Communities-114376120212298/)
-- [ECCS Instagram] (https://www.instagram.com/engagedcommunities/)
+- [ECCS Instagram](https://www.instagram.com/engagedcommunities/)
 - [ECCS Twitter](https://twitter.com/EngagedCommuni2)
 
 ## Contributor:
