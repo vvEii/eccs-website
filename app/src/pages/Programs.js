@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PostCard from '../components/PostCard';
+import ProgramCard from '../components/ProgramCard';
 import PROGRAMS from '../data/programs';
 
 const Programs = () => {
@@ -11,7 +11,7 @@ const Programs = () => {
       </div>
       <div className='grid grid-cols-2 gap-10'>
         {PROGRAMS.map((program, index) => (
-          <PostCard
+          <ProgramCard
             img={program.img}
             title={program.title}
             abstract={program.abstract}

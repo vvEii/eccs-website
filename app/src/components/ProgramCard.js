@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PostCard = (props) => {
+const ProgramCard = (props) => {
   return (
     <div className='flex flex-col justify-center items-center col-span-1 row-span-1'>
       <img src={props.img} alt='Program' className='object-cover h-full' />
@@ -24,4 +24,4 @@ const PostCard = (props) => {
   );
 };
 
-export default PostCard;
+export default ProgramCard;
