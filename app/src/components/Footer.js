@@ -31,6 +31,9 @@ const Footer = () => {
             <Link className='underline text-base pb-1' to='/contact'>
               Contact Us
             </Link>
+            <Link className='underline text-base pb-1' to='/get-involved'>
+              Get Involved
+            </Link>
           </div>
           <div className='flex flex-col text-white text-left'>
             <span className='font-medium text-xl pb-10'>Follow</span>
@@ -55,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <span className='text-base bg-black w-screen text-white font-light block pb-12'>
+      <span className='text-sm bg-black w-screen text-white font-light block pb-6'>
         Powered by Oxus Machine Works Ltd.
       </span>
     </>
