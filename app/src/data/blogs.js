@@ -1,23 +1,27 @@
 const BLOGS = [
   {
+    id: 1,
     date: '01/03/2021',
     title: 'Overdose Prevention',
     abstract: 'Program of overdose prevention',
     img: 'images/blog-img-1.jpg',
   },
   {
+    id: 2,
     date: '02/03/2021',
     title: 'Food Security',
     abstract: 'Program of food security',
     img: 'images/blog-img-1.jpg',
   },
   {
+    id: 3,
     date: '03/03/2021',
     title: 'Hygiene Program',
     abstract: `Stylists provide free cuts to Surrey's most vulnerable`,
     img: 'images/blog-img-1.jpg',
   },
   {
+    id: 4,
     date: '04/03/2021',
     title: 'Opus Prep',
     abstract:
