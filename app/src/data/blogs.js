@@ -3,21 +3,23 @@ const BLOGS = [
     id: 1,
     date: '01/03/2021',
     title: 'Overdose Prevention',
-    abstract: 'Program of overdose prevention',
+    abstract:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus.',
     img: 'images/blog-img-1.jpg',
   },
   {
     id: 2,
     date: '02/03/2021',
     title: 'Food Security',
-    abstract: 'Program of food security',
+    abstract:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus.',
     img: 'images/blog-img-1.jpg',
   },
   {
     id: 3,
     date: '03/03/2021',
     title: 'Hygiene Program',
-    abstract: `Stylists provide free cuts to Surrey's most vulnerable`,
+    abstract: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus.`,
     img: 'images/blog-img-1.jpg',
   },
   {
@@ -25,7 +27,7 @@ const BLOGS = [
     date: '04/03/2021',
     title: 'Opus Prep',
     abstract:
-      'Opus Prep has been bringing youth-focused programs to communities',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id leo in vitae turpis. Arcu cursus vitae congue mauris. Risus at ultrices mi tempus.',
     img: 'images/blog-img-1.jpg',
   },
 ];
