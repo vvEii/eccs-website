@@ -11,6 +11,8 @@ const Blog = () => {
           title={blog.title}
           abstract={blog.abstract}
           image={blog.img}
+          key={blog.id}
+          id={blog.id}
         />
       ))}
     </div>

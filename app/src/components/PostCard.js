@@ -11,10 +11,16 @@ const PostCard = (props) => {
       />
       <div className='flex flex-col items-start space-y-10 justify-end'>
         <p className='text-lg'>{props.date}</p>
-        <Link>
+        <Link
+          to={{
+            pathname: `/blog-details/${props.id}`,
+            blogProps: {
+              id: props.id,
+            },
+          }}
+        >
           <p className='text-3xl font-medium text-left'>{props.title}</p>
         </Link>
-
         <p className='text-lg font-normal text-left'>{props.abstract}</p>
       </div>
     </div>
