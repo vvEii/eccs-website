@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <>
-      <div className='flex bg-black justify-between w-screen h-2/6 py-10 px-24 lg:px-60 2xl:px-96'>
+      <div className='flex bg-black flex-col space-y-12 md:flex-row md:space-y-0 justify-between w-screen h-2/6 py-10 px-24 lg:px-60 2xl:px-96'>
         <div className='flex flex-col text-white text-left max-w-screen-md'>
           <span className='font-medium text-xl pb-10'>
             Engaged Communities Canada Society
@@ -16,7 +16,7 @@ const Footer = () => {
             Maybe you want to turn a hobby into something more.
           </span>
         </div>
-        <div className='flex justify-between'>
+        <div className='flex flex-col space-y-12 md:space-y-0 md:flex-row justify-between '>
           <div className='flex flex-col text-white text-left mr-24'>
             <span className='font-medium text-xl pb-10'>Our Work </span>
             <Link className='underline text-base pb-1' to='/about'>
