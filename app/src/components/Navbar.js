@@ -22,7 +22,28 @@ const Navbar = () => {
       <Link to='/' className='text-4xl font-normal w-1/4 text-left'>
         ECCS
       </Link>
-      <div className='flex justify-between items-center w-8/12 lg:w-7/12 text-base font-light '>
+
+      <svg
+        className='w-10 h-10 md:hidden'
+        fill='currentColor'
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 320 512'
+      >
+        <path
+          d='M501.333,96H10.667C4.779,96,0,100.779,0,106.667s4.779,10.667,10.667,10.667h490.667c5.888,0,10.667-4.779,10.667-10.667
+			S507.221,96,501.333,96z'
+        />
+        <path
+          d='M501.333,245.333H10.667C4.779,245.333,0,250.112,0,256s4.779,10.667,10.667,10.667h490.667
+			c5.888,0,10.667-4.779,10.667-10.667S507.221,245.333,501.333,245.333z'
+        />
+        <path
+          d='M501.333,394.667H10.667C4.779,394.667,0,399.445,0,405.333C0,411.221,4.779,416,10.667,416h490.667
+			c5.888,0,10.667-4.779,10.667-10.667C512,399.445,507.221,394.667,501.333,394.667z'
+        />
+      </svg>
+
+      <div className='justify-between items-center w-8/12 lg:w-7/12 text-base font-light hidden md:flex'>
         <Link className='font-light' to='/about'>
           About
         </Link>
