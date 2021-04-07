@@ -5,7 +5,7 @@ import PROGRAMS from '../data/programs';
 
 const Programs = () => {
   return (
-    <div className='px-8 md:px-24 lg:px-60 2xl:px-96'>
+    <div className='px-4 md:px-12 lg:px-40 2xl:px-96'>
       <div className='div text-5xl text-black font-medium block mt-40 mb-24'>
         Current Programs
       </div>
