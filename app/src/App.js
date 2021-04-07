@@ -1,7 +1,10 @@
 //import logo from './logo.svg';
+import { useState } from 'react';
+
 import { Route, Switch } from 'react-router';
 import './App.css';
 import Home from './pages/Home';
+import MobileMenu from './components/MobileMenu';
 import About from './pages/About';
 import Blog from './pages/Blog';
 import Programs from './pages/Programs';
@@ -16,9 +19,15 @@ import VolunteerEmployment from './pages/VolunteerEmployment';
 import BlogDetail from './pages/BlogDetail';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className='App'>
-      <Navbar />
+      {!isOpen && <Navbar toggle={toggle} />}
+      {isOpen && <MobileMenu toggle={toggle} />}
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/blog' component={Blog} />

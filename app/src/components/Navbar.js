@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
   // TIPs about react hook:
   // 1. react hooks must be called in the component body
   // 2. react hooks can't be called conditionally
@@ -28,6 +28,7 @@ const Navbar = () => {
         fill='currentColor'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 320 512'
+        onClick={props.toggle}
       >
         <path
           d='M501.333,96H10.667C4.779,96,0,100.779,0,106.667s4.779,10.667,10.667,10.667h490.667c5.888,0,10.667-4.779,10.667-10.667
