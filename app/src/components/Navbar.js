@@ -43,7 +43,7 @@ const Navbar = () => {
         />
       </svg>
 
-      <div className='justify-between items-center w-8/12 lg:w-7/12 text-base font-light hidden md:flex'>
+      <div className='justify-between items-center w-8/12 text-base font-light hidden md:flex lg:w-7/12'>
         <Link className='font-light' to='/about'>
           About
         </Link>
