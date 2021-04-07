@@ -45,7 +45,7 @@ const Home = () => {
           </p>
           <Link
             to='/about'
-            className='bg-black text-base text-white px-7 py-4 font-medium hover:bg-gray-300 w-2/6 transition ease-in-out duration-700'
+            className='bg-black text-base text-white px-7 py-4 font-medium w-1/2 hover:bg-gray-300 lg:w-2/6 transition ease-in-out duration-700'
           >
             Learn More
           </Link>
