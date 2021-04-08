@@ -33,9 +33,9 @@ const Home = () => {
           exceptional wild places.
         </p>
       </div>
-      <div className='flex flex-col md:flex-row justify-between px-6 md:px-12 lg:px-40 2xl:px-96 py-20'>
-        <div className='flex flex-col flex-1 pr-24'>
-          <p className='text-black text-left text-4xl font-normal leading-normal pt-24'>
+      <div className='flex flex-col md:flex-row justify-between px-6 py-6 md:px-12 lg:px-40 2xl:px-96 md:py-20'>
+        <div className='flex flex-col flex-1 md:pr-24'>
+          <p className='text-black text-left text-2xl md:text-4xl font-normal leading-normal md:pt-24'>
             Chanaasdsdging the world is possible. We’asdasdasdve done it before.
           </p>
           <p className='text-black text-lg text-left font-light py-12'>

@@ -12,8 +12,10 @@ const BlogDetail = (props) => {
   console.log(currentBlog.img);
   return (
     <div className='flex justify-center'>
-      <div className='flex flex-col items-center justify-center space-y-20 md:w-1/2 md:my-60'>
-        <p className='text-7xl font-medium'>{currentBlog.title}</p>
+      <div className='flex flex-col items-start justify-center space-y-20 px-6 py-36 lg:w-1/2 md:py-60'>
+        <p className='text-3xl text-left md:text-7xl font-medium'>
+          {currentBlog.title}
+        </p>
         <img
           src={`/${currentBlog.img}`} //be careful with the very ahead /
           alt='Iamge'
