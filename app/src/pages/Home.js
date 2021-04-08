@@ -10,8 +10,8 @@ const Home = () => {
           backgroundImage: 'url(images/bg-landing-page.jpg)',
         }}
       >
-        <div className='flex flex-col absolute bottom-24 px-4 md:px-12 lg:px-40 2xl:px-96'>
-          <p className='text-5xl text-white font-normal mb-10 text-left leading-normal md:pr-24'>
+        <div className='flex flex-col absolute bottom-24 px-6 md:px-12 lg:px-40 2xl:px-96'>
+          <p className='text-3xl md:text-5xl text-white font-normal mb-10 text-left leading-normal md:pr-24'>
             Help our communities with love and passion
           </p>
           <Link
@@ -22,18 +22,18 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <div className='flex justify-between items-center w-screen bg-test px-4 md:px-12 lg:px-40 2xl:px-96 py-12'>
-        <p className='font-medium text-black text-4xl text-left leading-normal '>
+      <div className='flex flex-col space-y-10 md:flex-row md:space-y-0 justify-between items-center w-screen bg-test px-6 md:px-12 lg:px-40 2xl:px-96 py-12'>
+        <p className='font-medium text-black text-2xl md:text-4xl text-left leading-normal md:pr-4'>
           Engaged Communities Canada Society Engaged Communities Canada Society
           Engaged Communities Canada Society
         </p>
-        <p className='text-black text-2xl font-light text-left leading-loose'>
+        <p className='text-black text-lg md:text-2xl font-light text-left leading-loose md:pl-4'>
           Our mission is to create international consensus around the climate
           emergency, as well a shared plan for saving the planet’s most
           exceptional wild places.
         </p>
       </div>
-      <div className='flex justify-between px-4 md:px-12 lg:px-40 2xl:px-96 py-20'>
+      <div className='flex flex-col md:flex-row justify-between px-6 md:px-12 lg:px-40 2xl:px-96 py-20'>
         <div className='flex flex-col flex-1 pr-24'>
           <p className='text-black text-left text-4xl font-normal leading-normal pt-24'>
             Chanaasdsdging the world is possible. We’asdasdasdve done it before.
@@ -53,7 +53,7 @@ const Home = () => {
         <img
           src='images/content-landing-page.jpg'
           alt=''
-          className='w-1 flex-1 py-10 pl-10'
+          className='w-screen md:w-1/2 flex-1 py-10 md:pl-10'
         />
       </div>
     </>

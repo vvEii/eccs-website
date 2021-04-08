@@ -15,7 +15,7 @@ const BackTab = (props) => {
 		c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z'
         />
       </svg>
-      <span className='text-2xl text-black ml-1 md:ml-4 md:text-4xl'>
+      <span className='text-xl text-black md:ml-4 md:text-4xl'>
         {props.title}
       </span>
     </div>

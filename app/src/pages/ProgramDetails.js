@@ -10,7 +10,7 @@ const ProgramDetails = (props) => {
 
   return (
     <div className='grid grid-col-1 place-content-stretch min-h-screen'>
-      <div className='flex flex-col justify-center items-start mx-4 pt-32 md:px-12 md:w-1/2 md:pt-32 justify-self-center'>
+      <div className='flex flex-col justify-center items-start px-6 pt-32 md:px-12 md:w-1/2 md:pt-32 justify-self-center'>
         <p className='text-3xl font-normal md:text-6xl md:font-medium mb-12'>
           {program.title}
         </p>

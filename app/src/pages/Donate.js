@@ -3,7 +3,7 @@ import React from 'react';
 const Donate = () => {
   return (
     <div className='flex items-center justify-center'>
-      <div className='flex flex-col justify-center items-start min-h-screen px-4 md:px-12 lg:px-40 2xl:px-96'>
+      <div className='flex flex-col justify-center items-start min-h-screen px-6 md:px-12 lg:px-40 2xl:px-96'>
         <p className='text-4xl font-normal md:text-6xl md:font-medium mb-12'>
           Donate
         </p>

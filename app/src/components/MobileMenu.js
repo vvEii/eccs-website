@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const MobileMenu = (props) => {
   return (
     <div className='bg-white flex flex-col justify-between items-center space-y-10 w-screen h-screen py-12'>
-      <div className='flex justify-between items-center w-screen px-4'>
+      <div className='flex justify-between items-center w-screen px-6'>
         <Link to='/' className='text-2xl font-normal w-1/4 text-left'>
           ECCS
         </Link>

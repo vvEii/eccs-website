@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <>
-      <div className='flex bg-black flex-col space-y-12 px-4 md:flex-row md:space-y-0 justify-between w-screen h-2/6 py-10 md:px-12 lg:px-60 2xl:px-96'>
+      <div className='flex bg-black flex-col space-y-12 px-6 md:flex-row md:space-y-0 justify-between w-screen h-2/6 py-10 md:px-12 lg:px-60 2xl:px-96'>
         <div className='flex flex-col text-white text-left max-w-screen-md'>
           <span className='font-medium text-xl pb-10'>
             Engaged Communities Canada Society
