@@ -164,7 +164,7 @@ const Form = () => {
       </div>
 
       <button
-        className='bg-black text-white text-2xl font-medium mt-14 h-full focus:outline-none active:bg-gray-400 flex justify-center items-center hover:bg-gray-400 transition ease-in-out duration-700'
+        className='bg-black text-white text-lg md:text-2xl font-medium mt-14 h-full focus:outline-none active:bg-gray-400 flex justify-center items-center hover:bg-gray-400 transition ease-in-out duration-700'
         onClick={handleSubmit}
       >
         {spinAlert && (

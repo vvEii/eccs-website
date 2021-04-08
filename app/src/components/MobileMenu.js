@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const MobileMenu = (props) => {
   return (
-    <div className='bg-white flex flex-col justify-between items-center space-y-10 h-screen py-12'>
+    <div className='bg-white flex flex-col justify-between items-center space-y-10 w-screen h-screen py-12'>
       <div className='flex justify-between items-center w-screen px-4'>
-        <Link to='/' className='text-4xl font-normal w-1/4 text-left'>
+        <Link to='/' className='text-2xl font-normal w-1/4 text-left'>
           ECCS
         </Link>
         <div onClick={props.toggle}>close</div>
@@ -24,7 +24,7 @@ const MobileMenu = (props) => {
           Contact Us
         </Link>
       </div>
-      <div className='flex items-center justify-between'>
+      <div className='flex items-center justify-between w-1/3'>
         <a href='https://www.instagram.com/engagedcommunities/'>
           {/* outline style instagram icon */}
           {/* <svg

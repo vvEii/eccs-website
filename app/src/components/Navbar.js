@@ -19,12 +19,12 @@ const Navbar = (props) => {
       }
       role='navigation'
     >
-      <Link to='/' className='text-4xl font-normal w-1/4 text-left'>
+      <Link to='/' className='text-2xl md:text-4xl font-normal w-1/4 text-left'>
         ECCS
       </Link>
 
       <svg
-        className='w-10 h-10 md:hidden'
+        className='w-8 h-8 md:hidden'
         fill='currentColor'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 320 512'

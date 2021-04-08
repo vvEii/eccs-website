@@ -6,10 +6,10 @@ import PROGRAMS from '../data/programs';
 const Programs = () => {
   return (
     <div className='px-4 md:px-12 lg:px-40 2xl:px-96'>
-      <div className='div text-5xl text-black font-medium block mt-40 mb-24'>
+      <div className='div text-3xl font-normal mb-12 md:text-5xl text-black md:font-medium block mt-40 md:mb-24'>
         Current Programs
       </div>
-      <div className='grid grid-cols-2 gap-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         {PROGRAMS.map((program, index) => (
           <ProgramCard
             img={program.img}

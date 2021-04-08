@@ -14,10 +14,10 @@ const GetInvolved = () => {
         style={{ backgroundColor: '#2a2829' }}
       ></div>
 
-      <div className='absolute inset-0 grid grid-cols-1 items-center text-white px-24 lg:px-40 2xl:px-96 text-left md:grid-cols-3 md:gap-10'>
+      <div className='absolute inset-0 grid grid-cols-1 gap-y-10 items-center text-white px-4 md:px-24 lg:px-40 2xl:px-96 text-left md:grid-cols-3 md:gap-10'>
         <div className=''>
-          <p className='text-4xl font-medium pb-10'>Donate</p>
-          <p className='font-extralight text-lg pb-10'>
+          <p className='text-3xl md:text-4xl font-medium pb-10'>Donate</p>
+          <p className='font-extralight  text-base md:text-lg pb-10'>
             It all begins with an idea. Maybe you want to launch a business.
             Maybe you want to turn a hobby into something more. Or maybe you
             have a creative project to share with the world. Whatever it is, the
@@ -31,8 +31,8 @@ const GetInvolved = () => {
           </Link>
         </div>
         <div className=''>
-          <p className='text-4xl font-medium pb-10'>Partnership</p>
-          <p className='font-extralight text-lg pb-10'>
+          <p className='text-3xl md:text-4xl font-medium pb-10'>Partnership</p>
+          <p className='font-extralight text-base md:text-lg pb-10'>
             It all begins with an idea. Maybe you want to launch a business.
             Maybe you want to turn a hobby into something more. Or maybe you
             have a creative project to share with the world. Whatever it is, the
@@ -46,8 +46,10 @@ const GetInvolved = () => {
           </Link>
         </div>
         <div className=''>
-          <p className='text-4xl font-medium pb-10'>Volunteer & Employment</p>
-          <p className='font-extralight text-lg pb-10'>
+          <p className='text-3xl md:text-4xl font-medium pb-10'>
+            Volunteer & Employment
+          </p>
+          <p className='font-extralight text-base md:text-lg pb-10'>
             It all begins with an idea. Maybe you want to launch a business.
             Maybe you want to turn a hobby into something more. Or maybe you
             have a creative project to share with the world. Whatever it is, the
