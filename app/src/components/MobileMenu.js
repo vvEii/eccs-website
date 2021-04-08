@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 const MobileMenu = (props) => {
   return (
-    <div className='bg-white flex flex-col justify-between items-center space-y-10 w-screen h-screen py-12'>
+    <div className='bg-white flex flex-col justify-between items-center space-y-10 w-screen h-screen py-12 overflow-hidden'>
       <div className='flex justify-between items-center w-screen px-6'>
         <Link to='/' className='text-2xl font-normal w-1/4 text-left'>
           ECCS
         </Link>
         <div onClick={props.toggle}>
           <svg
-            className='w-8 h-8'
+            className='w-9 h-9'
             fill='currentColor'
             viewBox='0 0 20 20'
             xmlns='http://www.w3.org/2000/svg'
@@ -53,8 +53,7 @@ const MobileMenu = (props) => {
         </svg> */}
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            width='24'
-            height='24'
+            className='w-8 h-8'
             viewBox='0 0 24 24'
           >
             <path
@@ -65,7 +64,7 @@ const MobileMenu = (props) => {
         </a>
         <a href='https://www.facebook.com/Engaged-Communities-114376120212298/'>
           <svg
-            className='w-5 h-5'
+            className='w-8 h-8'
             fill='none'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 320 512'
@@ -79,7 +78,7 @@ const MobileMenu = (props) => {
 
         <a href='https://twitter.com/EngagedCommuni2'>
           <svg
-            className='w-5 h-5'
+            className='w-8 h-8'
             fill='none'
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 512 512'
@@ -93,7 +92,7 @@ const MobileMenu = (props) => {
       </div>
       <Link
         to='/get-involved'
-        className='bg-black text-sm text-white p-4 font-medium w-1/2 hover:bg-gray-400 transition ease-in-out duration-700'
+        className='bg-black text-base text-white p-4 font-medium w-1/2 hover:bg-gray-400 transition ease-in-out duration-700'
       >
         Get Involved
       </Link>
