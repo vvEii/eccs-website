@@ -44,7 +44,7 @@ const Navbar = (props) => {
         />
       </svg>
 
-      <div className='justify-between items-center w-8/12 text-base font-light hidden md:flex lg:w-7/12'>
+      <div className='justify-between items-center w-9/12 text-base font-light hidden md:flex xl:w-8/12'>
         <Link className='font-light' to='/about'>
           About
         </Link>

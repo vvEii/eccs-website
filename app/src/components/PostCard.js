@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const PostCard = (props) => {
   return (
-    <div className='flex flex-col space-y-10 px-6 md:px-12 lg:w-3/5 md:flex-row md:space-x-10 md:items-end'>
+    <div className='flex flex-col space-y-10 px-6 md:px-12 lg:px-40 2xl:px-96 md:flex-row md:space-x-10 md:items-end'>
       <img
         src={props.image}
         alt=''

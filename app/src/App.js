@@ -24,7 +24,7 @@ function App() {
   };
 
   return (
-    <div className='App'>
+    <div className='App overflow-hidden'>
       {!isOpen && <Navbar toggle={toggle} />}
       {isOpen && <MobileMenu toggle={toggle} />}
       <Switch>

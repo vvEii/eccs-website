@@ -18,7 +18,7 @@ const GetInvolved = () => {
         className='absolute inset-0 opacity-50 '
         style={{ backgroundColor: '#2a2829' }}
       ></div>
-      <div className='grid grid-cols-1 gap-y-10 items-center text-white z-10 px-6 md:px-24 lg:px-40 2xl:px-96 text-left md:grid-cols-3 md:gap-10'>
+      <div className='grid grid-cols-1 gap-y-10 items-center text-white z-10 px-6 md:px-12 lg:px-40 2xl:px-96 text-left md:grid-cols-3 md:gap-10'>
         <div>
           <p className='text-3xl pb-6 md:text-4xl font-medium md:pb-10'>
             Donate
