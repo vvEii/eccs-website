@@ -47,16 +47,44 @@ const Navbar = () => {
       </Link>
 
       <div className='justify-between items-center w-9/12 text-base font-light hidden md:flex xl:w-8/12'>
-        <Link className='font-light' to='/about'>
+        <Link
+          className={
+            currentPath === '/about'
+              ? 'font-light border-b border-white pb-1'
+              : 'font-light'
+          }
+          to='/about'
+        >
           About
         </Link>
-        <Link className='font-light' to='/programs'>
+        <Link
+          className={
+            currentPath === '/programs'
+              ? 'font-light border-b border-black pb-1'
+              : 'font-light'
+          }
+          to='/programs'
+        >
           Programs
         </Link>
-        <Link className='font-light' to='/blog'>
+        <Link
+          className={
+            currentPath === '/blog'
+              ? 'font-light border-b border-black pb-1'
+              : 'font-light'
+          }
+          to='/blog'
+        >
           Blog
         </Link>
-        <Link className='font-light' to='/contact'>
+        <Link
+          className={
+            currentPath === '/contact'
+              ? 'font-light border-b border-black pb-1'
+              : 'font-light'
+          }
+          to='/contact'
+        >
           Contact Us
         </Link>
         <a href='https://www.instagram.com/engagedcommunities/'>
