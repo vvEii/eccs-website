@@ -5,11 +5,15 @@ const Home = () => {
   return (
     <>
       <div
-        className='bg-no-repeat bg-center bg-cover w-auto h-screen '
+        className=' bg-center bg-cover h-screen '
         style={{
           backgroundImage: 'url(images/bg-landing-page.jpg)',
         }}
       >
+        <div
+          className='absolute inset-0 opacity-20 '
+          style={{ backgroundColor: '#2a2829' }}
+        ></div>
         <div className='flex flex-col absolute bottom-24 px-6 md:px-12 lg:px-40 2xl:px-96'>
           <p className='text-3xl md:text-5xl text-white font-normal mb-10 text-left leading-normal md:pr-24'>
             Help our communities with love and passion
