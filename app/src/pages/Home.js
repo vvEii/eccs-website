@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <div
-        className='bg-no-repeat bg-center bg-cover w-auto h-screen'
+        className='bg-no-repeat bg-center bg-cover w-auto h-screen '
         style={{
           backgroundImage: 'url(images/bg-landing-page.jpg)',
         }}

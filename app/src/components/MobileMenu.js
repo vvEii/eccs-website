@@ -1,14 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
-const MobileMenu = (props) => {
+const MobileMenu = () => {
+  
+  const history = useHistory();
+  const goToPreviousPath = () => {
+    history.goBack();
+  };
+
   return (
-    <div className='bg-white flex flex-col justify-between items-center space-y-10 w-screen h-screen py-12 overflow-hidden'>
+    <div className='bg-white flex flex-col justify-between items-center space-y-10 w-screen h-screen py-12 fixed '>
       <div className='flex justify-between items-center w-screen px-6'>
         <Link to='/' className='text-2xl font-normal w-1/4 text-left'>
           ECCS
         </Link>
-        <div onClick={props.toggle}>
+        <div onClick={goToPreviousPath}>
           <svg
             className='w-9 h-9'
             fill='currentColor'

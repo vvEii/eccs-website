@@ -10,6 +10,10 @@
   @apply flex justify-between  items-center h-16 absolute inset-0 z-20 text-black px-6 md:px-12 py-16 lg:px-40 2xl:px-96;
 }
 
+.hidden-nav {
+  @apply hidden;
+}
+
 .get-involved-btn-white {
   @apply bg-white text-sm md:text-base text-black p-4  font-medium hover:bg-gray-200 transition ease-in-out duration-700;
 }

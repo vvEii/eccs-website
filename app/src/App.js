@@ -18,17 +18,12 @@ import VolunteerEmployment from './pages/VolunteerEmployment';
 import BlogDetail from './pages/BlogDetail';
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <div className='App overflow-hidden'>
-      {!isOpen && <Navbar toggle={toggle} />}
-      {isOpen && <MobileMenu toggle={toggle} />}
+    <div className='App'>
+      <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/mobile-menu' exact component={MobileMenu} />
         <Route path='/blog' component={Blog} />
         <Route path='/about' component={About} />
         <Route path='/programs' component={Programs} />
