@@ -59,7 +59,8 @@ const Navbar = () => {
         </Link>
         <Link
           className={
-            currentPath === '/programs'
+            currentPath === '/programs' ||
+            currentPath.includes('/program-details')
               ? 'font-light border-b border-black pb-1'
               : 'font-light'
           }
@@ -69,7 +70,7 @@ const Navbar = () => {
         </Link>
         <Link
           className={
-            currentPath === '/blog'
+            currentPath === '/blog' || currentPath.includes('/blog-details')
               ? 'font-light border-b border-black pb-1'
               : 'font-light'
           }
