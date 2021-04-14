@@ -1,5 +1,4 @@
 //import logo from './logo.svg';
-import { useState } from 'react';
 import { Route, Switch } from 'react-router';
 import './App.css';
 import Home from './pages/Home';
