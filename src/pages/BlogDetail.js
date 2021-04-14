@@ -9,7 +9,7 @@ function getBlog(id) {
 const BlogDetail = (props) => {
   const blogID = props.location.blogProps.id;
   const currentBlog = getBlog(blogID);
-  console.log(currentBlog.img);
+
   return (
     <div className='flex justify-center'>
       <div className='flex flex-col items-start justify-center space-y-20 px-6 py-36 md:w-7/12 lg:w-1/2 md:py-60'>
