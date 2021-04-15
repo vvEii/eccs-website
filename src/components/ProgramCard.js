@@ -7,7 +7,7 @@ const ProgramCard = (props) => {
       <img
         src={props.img}
         alt='Program'
-        className='object-cover h-48 md:h-full'
+        className='object-cover w-full md:w-auto md:h-full md:px-0'
       />
       <div className='text-black text-3xl font-normal pt-8'>{props.title}</div>
       <div className='text-black text-sm pt-8 font-light md:font-normal'>
