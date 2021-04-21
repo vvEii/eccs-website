@@ -4,6 +4,10 @@ This project is made for Engaged Communities Canada Society official website usi
 
 ECCS aims to address the systemic gaps that exist for underserved communities across British Columbia's lower mainland region in accessing equitable solutions to complex health challenges. The primary activities include the delivery of food, hygiene supplies, personal hygiene services, personal protective equipment, overdose prevention education and resources, and youth programming (academic assistance, mentorship, athletics, and outdoor adventures) to communities in greatest need.
 
+## View Website:
+
+This test version of this project has been deployed on DigitalOcean, view it here: https://eccs-xattl.ondigitalocean.app
+
 ## Social media links:
 
 - [ECCS Facebook](https://www.facebook.com/Engaged-Communities-114376120212298/)
